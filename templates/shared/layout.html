@@ -1,0 +1,47 @@
+{% load layout_templatetags %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+
+<meta charset="utf-8">
+    <title>قالب فارسی شرکتی</title>
+    <meta name="description" content="">
+    <meta name="author" content="netcopy.ir" />
+ 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% include 'shared/_head_refrences.html' %}
+</head>
+
+
+
+
+
+
+
+<body>
+ {% site_header %}
+
+  <!-- محتوای اصلی -->
+  {% block content %}
+  {% endblock %}
+
+    <div class="body-overlay"></div>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+
+
+ <div id="back-to-top">
+        <a class="top" id="top" href="#top"> <i class="ti-angle-up"></i> </a>
+    </div>
+ {% site_footer %}
+
+  <!-- بارگذاری منابع استاتیک فوتر -->
+  {% include 'shared/_footer_refrences.html' %}
+</body>
+</html>
